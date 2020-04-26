@@ -303,14 +303,29 @@
     <Content Include="App_Plugins\StarterKit\tours\views\medialibrary\uploadimages.html" />
     <Content Include="App_Plugins\StarterKit\tours\views\validatetext.controller.js" />
     <Content Include="App_Plugins\StarterKit\tours\views\validatetext.html" />
+    <Content Include="ClientApp\.editorconfig" />
     <Content Include="ClientApp\.gitignore" />
+    <Content Include="ClientApp\angular.json" />
+    <Content Include="ClientApp\browserslist" />
     <Content Include="ClientApp\e2e\protractor.conf.js" />
+    <Content Include="ClientApp\e2e\tsconfig.json" />
     <Content Include="ClientApp\karma.conf.js" />
+    <Content Include="ClientApp\package-lock.json" />
+    <Content Include="ClientApp\package.json" />
+    <Content Include="ClientApp\README.md" />
     <Content Include="ClientApp\src\app\app.component.css" />
     <Content Include="ClientApp\src\app\app.component.html" />
+    <Content Include="ClientApp\src\app\logo\logo.component.css" />
+    <Content Include="ClientApp\src\app\logo\logo.component.html" />
+    <Content Include="ClientApp\src\assets\.gitkeep" />
+    <Content Include="ClientApp\src\assets\whiscode_dark.svg" />
     <Content Include="ClientApp\src\favicon.ico" />
     <Content Include="ClientApp\src\index.html" />
     <Content Include="ClientApp\src\styles.css" />
+    <Content Include="ClientApp\tsconfig.app.json" />
+    <Content Include="ClientApp\tsconfig.json" />
+    <Content Include="ClientApp\tsconfig.spec.json" />
+    <Content Include="ClientApp\tslint.json" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -372,18 +387,6 @@
     <Content Include="App_Plugins\StarterKit\backoffice\tours\create-content.json" />
     <Content Include="App_Plugins\StarterKit\backoffice\tours\data-structure.json" />
     <Content Include="App_Plugins\StarterKit\package.manifest" />
-    <Content Include="ClientApp\e2e\tsconfig.json" />
-    <Content Include="ClientApp\src\assets\.gitkeep" />
-    <Content Include="ClientApp\.editorconfig" />
-    <Content Include="ClientApp\angular.json" />
-    <Content Include="ClientApp\browserslist" />
-    <Content Include="ClientApp\package-lock.json" />
-    <Content Include="ClientApp\package.json" />
-    <Content Include="ClientApp\README.md" />
-    <Content Include="ClientApp\tsconfig.app.json" />
-    <Content Include="ClientApp\tsconfig.json" />
-    <Content Include="ClientApp\tsconfig.spec.json" />
-    <Content Include="ClientApp\tslint.json" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -402,19 +405,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
     <TypeScriptCompile Include="ClientApp\e2e\src\app.e2e-spec.ts" />
     <TypeScriptCompile Include="ClientApp\e2e\src\app.po.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="ClientApp\src\environments\environment.ts" />
     <TypeScriptCompile Include="ClientApp\src\main.ts" />
     <TypeScriptCompile Include="ClientApp\src\polyfills.ts" />
     <TypeScriptCompile Include="ClientApp\src\test.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
