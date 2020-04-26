@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,62 +11,16 @@
    viewBox="0 0 97.490692 9.9342785"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="whiscode_dark_opt.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="154.35624"
-     inkscape:cy="16.201366"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="986"
-     inkscape:window-x="2869"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     units="px" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+   transform="scale(3) translate(0,20)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs id="defs2" />
   <g
      inkscape:label="tags"
      inkscape:groupmode="layer"
-     id="layer1"
+     id="chevrons"
      transform="translate(-42.372075,-59.308442)"
      style="display:inline">
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4485"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(0.26458333)"><flowRegion
-         id="flowRegion4487"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto"><rect
-           id="rect4489"
-           width="569.72601"
-           height="170.71577"
-           x="123.23861"
-           y="106.30622"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto" /></flowRegion><flowPara
-         id="flowPara4491" /></flowRoot>    <g
+    <g
        aria-label="&lt;/WHISCODE&gt;"
        transform="matrix(0.26458333,0,0,0.26458333,4.0090429,22.049736)"
        style="font-style:normal;font-weight:normal;font-size:60px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -83,7 +34,7 @@
   </g>
   <g
      inkscape:label="whiscode"
-     id="g4753"
+     id="logoText"
      inkscape:groupmode="layer"
      style="display:inline">
     <path
