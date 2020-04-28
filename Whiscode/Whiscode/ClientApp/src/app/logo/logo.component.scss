@@ -3,22 +3,21 @@
 //@debug breakpoints.breakpoint("md");
 
 :host {
-    position: fixed;
-    bottom: 40%;
-    left: 7vw;
-    width: 86vw;
+  position: fixed;
+  bottom: 40%;
+  left: 7vw;
+  width: 86vw;
 }
 
 #whiscodeLogo {
   display: block;
-  margin: auto;
   width: 260px;
 }
 
 #logoTagline {
   display: block;
-  padding: 10px 0 0 52px;
-  height: 30px;
+  padding: 10px 0 0 44px;
+  min-height: 45px;
 
   svg {
     width: 190px;
@@ -34,6 +33,13 @@
   #whiscodeLogo {
     width: 400px;
   }
+
+  #logoTagline {
+      padding-left: 68px;
+      svg {
+          width: 292px;
+      }
+  }
 }
 
 @media screen and (min-width: breakpoints.breakpoint("md")) {
@@ -43,5 +49,13 @@
 
   #whiscodeLogo {
     width: 550px;
+  }
+
+  #logoTagline {
+    padding-left: 96px;
+
+    svg {
+      width: 400px;
+    }
   }
 }
