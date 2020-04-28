@@ -15,7 +15,8 @@ const rtlEaseOutElasticKeyframes = [
   style({ transform: 'translateX(0%)'})
 ];
 
-export const rtlEaseOutElasticAnimation = trigger('rtlEaseOutElastic', [
+export const rtlEaseOutElasticAnimation =
+  trigger('rtlEaseOutElastic', [
     state('in', style({
       transform: 'translateX(0)', opacity: 1
     })),
