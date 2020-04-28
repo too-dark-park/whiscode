@@ -316,7 +316,7 @@
     <None Include="ClientApp\src\app\app.component.scss" />
     <Content Include="ClientApp\src\app\app.component.html" />
     <None Include="ClientApp\src\app\logo\logo.component.scss" />
-    <Content Include="ClientApp\src\app\logo\logo.component.svg" />
+    <Content Include="ClientApp\src\app\logo\logo.component.html" />
     <None Include="ClientApp\src\app\top-menu\top-menu.component.scss" />
     <Content Include="ClientApp\src\app\top-menu\top-menu.component.html" />
     <Content Include="ClientApp\src\assets\.gitkeep" />

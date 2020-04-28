@@ -42,3 +42,16 @@ export const rtlEaseOutElasticAnimation =
       ])
     ])
   ]);
+
+export const ttbCubicAnimation =
+  trigger('ttbCubic', [
+    state('in', style({
+      transform: 'translate(-28.3955px, -102.874px)'
+    })),
+    transition('void => in', [
+      style({ transform: 'translate(-28.3955px, -122.874px)' }),
+      animate('0.9s ease-out', style({
+        transform: 'translate(-28.3955px, -102.874px)'
+      }))
+    ])
+  ]);
