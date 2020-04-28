@@ -313,14 +313,15 @@
     <Content Include="ClientApp\package-lock.json" />
     <Content Include="ClientApp\package.json" />
     <Content Include="ClientApp\README.md" />
-    <Content Include="ClientApp\src\app\app.component.css" />
+    <None Include="ClientApp\src\app\app.component.scss" />
     <Content Include="ClientApp\src\app\app.component.html" />
-    <Content Include="ClientApp\src\app\logo\logo.component.css" />
+    <None Include="ClientApp\src\app\logo\logo.component.scss" />
     <Content Include="ClientApp\src\app\logo\logo.component.svg" />
     <Content Include="ClientApp\src\assets\.gitkeep" />
     <Content Include="ClientApp\src\assets\whiscode_dark.svg" />
     <Content Include="ClientApp\src\favicon.ico" />
     <Content Include="ClientApp\src\index.html" />
+    <Content Include="ClientApp\src\scss\_breakpoints.scss" />
     <None Include="ClientApp\src\styles.scss" />
     <Content Include="ClientApp\tsconfig.app.json" />
     <Content Include="ClientApp\tsconfig.json" />
@@ -410,6 +411,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\e2e\src\app.e2e-spec.ts" />
     <TypeScriptCompile Include="ClientApp\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\animations.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.module.ts" />

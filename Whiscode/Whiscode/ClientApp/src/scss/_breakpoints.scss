@@ -1,0 +1,28 @@
+//https://primer.style/css/support/breakpoints
+
+@use "sass:map";
+
+$width-xs: 0;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+
+$breakpoints: (
+  // Small screen / phone
+  "sm": $width-sm,
+
+  // Medium screen / tablet
+  "md": $width-md,
+
+  // Large screen / desktop (980 + (12 * 2)) <= container + gutters
+  "lg": $width-lg,
+
+  // Extra large screen / wide desktop
+  "xl": $width-xl
+
+) !default;
+
+@function breakpoint($key) {
+  @return map.get($breakpoints, $key);
+}

@@ -1,0 +1,12 @@
+@use '../../scss/breakpoints';
+
+//@debug breakpoints.breakpoint("md");
+
+:host {
+    display: block;
+}
+
+#whiscodeLogo {
+    display: block;
+    width: 260px;
+}

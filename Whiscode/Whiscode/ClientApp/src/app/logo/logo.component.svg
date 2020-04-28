@@ -6,13 +6,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="368.46875"
-   height="37.546879"
    viewBox="0 0 97.490692 9.9342785"
    version="1.1"
-   id="svg8"
-   transform="scale(3) translate(0,20)"
+   id="whiscodeLogo"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+
   <defs id="defs2" />
   <g
      inkscape:label="tags"
@@ -36,7 +34,9 @@
      inkscape:label="whiscode"
      id="logoText"
      inkscape:groupmode="layer"
-     style="display:inline">
+     style="display:inline"
+     [@rtlEaseOutElastic]="'in'"
+     >
     <path
        id="path4771-2"
        style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
