@@ -3,7 +3,8 @@
 //@debug breakpoints.breakpoint("md");
 
 :host {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 #whiscodeLogo {
