@@ -1,0 +1,19 @@
+@use "sass:color";
+@use 'colours';
+
+html, body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: color.scale(colours.$base-colour, $lightness: 50%);
+  letter-spacing: 2px;
+}
+
+a {
+  color: color.scale(colours.$base-colour, $lightness: 40%);
+
+  &:hover {
+    transition: color 0.5s ease;
+    color: colours.$base-colour;
+  }
+}
+
+
