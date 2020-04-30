@@ -1,0 +1,52 @@
+@use '../../scss/colours';
+
+:host {
+  display: block;
+  height: 100vh;
+  position: relative;
+}
+
+$diameter: 60;
+$unit: px;
+$diameterUnit: $diameter + $unit;
+
+.dot {
+  height: $diameterUnit;
+  width: $diameterUnit;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 15vh;
+  right: 5vw;
+  div {
+    position: absolute;
+    overflow: hidden;
+    width: $diameterUnit;
+    height: ($diameter / 2) + $unit;
+    bottom: 0;
+
+    mat-icon {
+      width: $diameterUnit;
+      height: $diameterUnit;
+      font-size: ($diameter / 1.5) + $unit;
+      position: absolute;
+      text-align: center;
+      bottom: -($diameter / 3) + $unit;
+      top: auto;
+
+      &:hover {
+        cursor: pointer;
+        color: colours.$base-colour;
+      }
+    }
+
+    &:first-child {
+      top: 0;
+
+      mat-icon {
+        top: 0;
+      }
+    }
+  }
+}
