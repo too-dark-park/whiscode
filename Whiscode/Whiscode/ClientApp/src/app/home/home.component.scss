@@ -1,4 +1,5 @@
 @use '../../scss/colours';
+@use '../../scss/breakpoints';
 
 :host {
   display: block;
@@ -17,8 +18,9 @@ $diameterUnit: $diameter + $unit;
   border-radius: 50%;
   position: absolute;
   overflow: hidden;
-  bottom: 8vh;
+  bottom: 5vh;
   right: 5vw;
+
   div {
     position: absolute;
     overflow: hidden;
@@ -48,5 +50,11 @@ $diameterUnit: $diameter + $unit;
         top: 0;
       }
     }
+  }
+}
+
+@media screen and (min-width: breakpoints.breakpoint("sm")) {
+  .dot {
+      bottom: 8vh;
   }
 }

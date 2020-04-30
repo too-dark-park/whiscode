@@ -25,20 +25,6 @@
   }
 }
 
-@media screen and (min-width: breakpoints.breakpoint("sm")) {
-
-  #whiscodeLogo {
-    width: 400px;
-  }
-
-  #logoTagline {
-      padding-left: 68px;
-      svg {
-          width: 292px;
-      }
-  }
-}
-
 @media screen and (min-width: breakpoints.breakpoint("md")) {
   :host {
     justify-content: left;

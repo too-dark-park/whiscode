@@ -1,4 +1,5 @@
 @use '../../scss/colours';
+@use '../../scss/breakpoints';
 
 :host {
   display: block;
@@ -8,10 +9,22 @@ header {
   padding: 5vh 5vw 0;
   height: 5vh;
 
+  .menu {
+    $menu-size: 40px;
+    height: $menu-size;
+    width: $menu-size;
+    font-size: $menu-size;
+    float: right;
+
+    &:hover {
+      color: colours.$base-colour;
+    }
+  }
+
   nav {
-    display: flex;
     justify-content: flex-end;
     font-size: 1.2em;
+    display: none;
 
     a {
       text-decoration: none;
@@ -26,3 +39,14 @@ header {
   }
 }
 
+@media screen and (min-width: breakpoints.breakpoint("md")) {
+  header {
+    .menu {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+    }
+  }
+}
