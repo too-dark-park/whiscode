@@ -16,7 +16,7 @@ header {
       padding: 5px 0;
       margin: 0 20px;
 
-      &:hover {
+      &:hover, &.active {
         transition: border 0.1s ease;
         border-bottom: 3px solid colours.$base-colour;
       }
