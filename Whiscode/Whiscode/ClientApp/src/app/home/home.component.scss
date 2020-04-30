@@ -2,7 +2,7 @@
 
 :host {
   display: block;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -17,7 +17,7 @@ $diameterUnit: $diameter + $unit;
   border-radius: 50%;
   position: absolute;
   overflow: hidden;
-  bottom: 15vh;
+  bottom: 8vh;
   right: 5vw;
   div {
     position: absolute;
