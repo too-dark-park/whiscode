@@ -1,3 +1,4 @@
+@use "sass:color";
 @use '../../scss/colours';
 @use '../../scss/breakpoints';
 
@@ -40,6 +41,11 @@ $diameterUnit: $diameter + $unit;
       &:hover {
         cursor: pointer;
         color: colours.$base-colour;
+      }
+
+      &.disabled {
+        color: color.scale(colours.$base-colour, $lightness: 80%);
+        cursor: default;
       }
     }
 
