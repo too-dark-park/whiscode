@@ -6,31 +6,89 @@
 }
 
 header {
+  $icon-size: 40px;
+
   padding: 5vh 5vw 0;
   height: 5vh;
+  overflow: hidden;
 
-  .menu {
-    $menu-size: 40px;
-    height: $menu-size;
-    width: $menu-size;
-    font-size: $menu-size;
-    float: right;
-
+  .mat-icon {
     &:hover {
       color: colours.$base-colour;
       cursor: pointer;
     }
   }
 
+  .menu {
+    height: $icon-size;
+    width: $icon-size;
+    font-size: $icon-size;
+    position: absolute;
+    right: 0;
+    top: -3px;
+
+    &.hide {
+      transform: rotateY(90deg);
+      transition: transform 0.5s ease;
+    }
+
+    &.show {
+      transform: rotateY(0);
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .close {
+    width: $icon-size;
+    height: $icon-size;
+    position: absolute;
+    font-size: $icon-size;
+    right: 0;
+    top: -3px;
+    transform: rotateY(90deg);
+
+    &.hide {
+      transform: rotateY(90deg);
+      transition: transform 0.5s ease;
+    }
+
+    &.show {
+      transform: rotateY(0);
+      transition: transform 0.5s ease;
+    }
+  }
+
   nav {
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-size: 1.2em;
-    display: none;
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-right: $icon-size + 10px;
+
+    .links {
+      transform: translateX(-100vw);
+    }
+
+    &.show {
+      .links {
+        transform: translateX(0);
+        transition: all 1s ease;
+      }
+    }
+
+    &.hide {
+      .links {
+        transform: translateX(-100vw);
+        transition: all 1s ease;
+      }
+    }
 
     a {
       text-decoration: none;
       padding: 5px 0;
       margin: 0 20px;
+      display: inline-block;
 
       &:hover, &.active {
         transition: border 0.1s ease;
@@ -42,12 +100,14 @@ header {
 
 @media screen and (min-width: breakpoints.breakpoint("md")) {
   header {
-    .menu {
+    .menu, .close {
       display: none;
     }
 
-    nav {
-      display: flex;
+    & nav, & nav.hide {
+      & .links {
+        transform: translateX(0);
+      }
     }
   }
 }

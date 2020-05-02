@@ -1,10 +1,19 @@
 <header>
+  <nav [ngClass]="displayNavigation ? 'show' : transition">
+    <div class="links">
+      <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLinkActive="active" routerLink="/contact">Contact</a>
+    </div>
 
-  <mat-icon class="menu" aria-hidden="false" aria-label="Menu">menu</mat-icon>
+    <mat-icon aria-hidden="false"
+              [ngClass]="displayNavigation ? 'show' : transition"
+              class="close"
+              (click)="toggleNavigation()"
+              aria-label="Close">close</mat-icon>
 
-  <nav>
-    <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a routerLinkActive="active" routerLink="/contact">Contact</a>
+    <mat-icon [ngClass]="!displayNavigation ? 'show' : transition"
+              class="menu" aria-hidden="false"
+              aria-label="Menu"
+              (click)="toggleNavigation()">menu</mat-icon>
   </nav>
-
 </header>
