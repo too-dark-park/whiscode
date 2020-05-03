@@ -4,8 +4,14 @@
 
 :host {
   display: block;
+}
+
+.hero {
   height: 90vh;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 $diameter: 60;
@@ -17,10 +23,11 @@ $diameterUnit: $diameter + $unit;
   width: $diameterUnit;
   background-color: #ffffff;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   bottom: 5vh;
   right: 5vw;
+  z-index: 1;
 
   div {
     position: absolute;

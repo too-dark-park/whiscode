@@ -9,6 +9,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
+import { SectionsComponent } from './sections/sections.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     LogoComponent,
     TopMenuComponent,
     ContactFormComponent,
-    HomeComponent
+    HomeComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule,

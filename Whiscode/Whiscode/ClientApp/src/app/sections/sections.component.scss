@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    top: 100vh;
+    position: relative;
+}
+
+.section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  min-height: 1000px; // TODO temporary style
+}

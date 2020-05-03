@@ -322,6 +322,8 @@
     <Content Include="ClientApp\src\app\home\home.component.html" />
     <Content Include="ClientApp\src\app\logo\logo.component.html" />
     <None Include="ClientApp\src\app\top-menu\top-menu.component.scss" />
+    <None Include="ClientApp\src\app\sections\sections.component.scss" />
+    <Content Include="ClientApp\src\app\sections\sections.component.html" />
     <Content Include="ClientApp\src\app\top-menu\top-menu.component.html" />
     <Content Include="ClientApp\src\assets\.gitkeep" />
     <Content Include="ClientApp\src\assets\whiscode_dark.svg" />
@@ -357,6 +359,7 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Media\umbraco_logo_white.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -433,6 +436,8 @@
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\sections\sections.component.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\sections\sections.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\top-menu\top-menu.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\top-menu\top-menu.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\environments\environment.prod.ts" />
