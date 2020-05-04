@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-sections',
@@ -7,10 +7,11 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class SectionsComponent implements OnInit {
 
-  @ViewChild("firstSection") firstSection: ElementRef;
+  @ViewChildren("section") sections: QueryList<ElementRef>;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 }
