@@ -27,6 +27,7 @@ export class HomeComponent {
   @ViewChild('down', { read: ElementRef }) down: ElementRef;
 
   scrollDown() {
+
     if (this.down.nativeElement.classList.contains('disabled')) {
       return;
     }
@@ -35,7 +36,7 @@ export class HomeComponent {
       this.sections[this.currentSectionIndex += 1].nativeElement.scrollIntoView({ behavior: "smooth" });
       this.renderer.removeClass(this.up.nativeElement, 'disabled');
 
-      if (this.sections.length = 1) {
+      if (this.sections.length == 1) {
         this.show = false;
       }
     }
