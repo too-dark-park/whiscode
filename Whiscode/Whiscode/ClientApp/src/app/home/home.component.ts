@@ -26,6 +26,9 @@ export class HomeComponent {
   @ViewChild('up', { read: ElementRef }) up: ElementRef;
   @ViewChild('down', { read: ElementRef }) down: ElementRef;
 
+  // TODO scrollDown / ScrollUp
+  // Would be good to calculate the nearest section based on the user's screen position
+  // When a user scrolls, the 'currentSectionIndex' is no longer valid
   scrollDown() {
 
     if (this.down.nativeElement.classList.contains('disabled')) {
@@ -36,6 +39,8 @@ export class HomeComponent {
       this.sections[this.currentSectionIndex += 1].nativeElement.scrollIntoView({ behavior: "smooth" });
       this.renderer.removeClass(this.up.nativeElement, 'disabled');
 
+      // Can't really navigate one section
+      // The user has been directed to the only one so no longer needed
       if (this.sections.length == 1) {
         this.show = false;
       }
