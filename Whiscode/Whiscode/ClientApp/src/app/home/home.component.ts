@@ -34,6 +34,10 @@ export class HomeComponent {
     if (this.sections[this.currentSectionIndex + 1]) {
       this.sections[this.currentSectionIndex += 1].nativeElement.scrollIntoView({ behavior: "smooth" });
       this.renderer.removeClass(this.up.nativeElement, 'disabled');
+
+      if (this.sections.length = 1) {
+        this.show = false;
+      }
     }
 
     if (!this.sections[this.currentSectionIndex + 1]) {
