@@ -1,5 +1,6 @@
 @use "sass:color";
 @use 'colours';
+@use 'breakpoints';
 
 html, body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -14,5 +15,17 @@ a {
   &:hover {
     transition: color 0.5s ease;
     color: colours.$base-colour;
+  }
+}
+
+p {
+  line-height: 1.8em;
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: breakpoints.breakpoint("md")) {
+  html, body {
+    letter-spacing: 2px;
+    font-size: 16px;
   }
 }

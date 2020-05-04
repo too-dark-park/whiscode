@@ -1,3 +1,5 @@
+@use '../../scss/breakpoints';
+
 :host {
     display: block;
     top: 100vh;
@@ -5,8 +7,72 @@
 }
 
 .section {
+  position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0 50%;
-  min-height: 1000px; // TODO temporary style
+  background-position-y: 50%;
+  background-position-x: 100%;
+  background-size: 50% auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .overlay {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    display: flex;
+  }
+
+  &.right {
+    align-items: flex-end;
+    background-position-x: 0;
+
+    .content {
+      padding: 20px 20px 20px 0;
+    }
+  }
+
+  .content {
+    padding: 20px 0 20px 20px;
+  }
+}
+
+@media screen and (min-width: breakpoints.breakpoint("md")) {
+  .section {
+    .content {
+      padding-left: 40px;
+    }
+
+    &.right {
+      .content {
+        padding-right: 40px;
+      }
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 2.2em;
+    }
+  }
+}
+
+@media screen and (min-width: breakpoints.breakpoint("lg")) {
+  .section {
+    .content {
+      padding-left: 80px;
+    }
+
+    &.right {
+      .content {
+        padding-right: 80px;
+      }
+    }
+
+    p {
+      font-size: 1.4em;
+      line-height: 2.4em;
+    }
+  }
 }
