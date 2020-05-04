@@ -6,16 +6,20 @@ import { SectionsComponent } from '../sections/sections.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit  {
+export class HomeComponent implements AfterViewInit {
 
   constructor() { }
 
-  @ViewChild(SectionsComponent) sections: SectionsComponent;
+  @ViewChild(SectionsComponent)
+  set sections(x: SectionsComponent) {
+    setTimeout(() => {
+      this.sectionView = x?.firstSection
+    }, 0);
+  }
 
   sectionView: ElementRef;
 
   ngAfterViewInit(): void {
-    this.sectionView = this.sections.firstSection;
   }
 
   scrollDown() {

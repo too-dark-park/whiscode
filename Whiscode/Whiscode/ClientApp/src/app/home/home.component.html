@@ -2,7 +2,7 @@
   <app-logo></app-logo>
 </div>
 
-<div class="dot">
+<div class="dot" *ngIf="sectionView">
   <div><mat-icon class="up disabled" aria-hidden="false" aria-label="Navigate up">keyboard_arrow_up</mat-icon></div>
   <div><mat-icon class="down" aria-hidden="false" aria-label="Navigate down" (click)="scrollDown()">keyboard_arrow_down</mat-icon></div>
 </div>

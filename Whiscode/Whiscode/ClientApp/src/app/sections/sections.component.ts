@@ -7,7 +7,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class SectionsComponent implements OnInit {
 
-  @ViewChild("firstSection", { static: true }) firstSection: ElementRef;
+  @ViewChild("firstSection") firstSection: ElementRef;
 
   constructor() { }
 
