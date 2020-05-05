@@ -30,7 +30,7 @@
     background-position-x: 0;
 
     .content {
-      padding: 20px 20px 20px 0;
+      padding: 20px 45px 20px 0;
     }
   }
 
@@ -40,6 +40,7 @@
 }
 
 @media screen and (min-width: breakpoints.breakpoint("md")) {
+  $contentPadding: 142px;
   .section {
     .content {
       padding-left: 40px;
@@ -59,14 +60,16 @@
 }
 
 @media screen and (min-width: breakpoints.breakpoint("lg")) {
+
+  $contentPadding: 95px;
   .section {
     .content {
-      padding-left: 80px;
+      padding-left: $contentPadding;
     }
 
     &.right {
       .content {
-        padding-right: 80px;
+        padding-right: $contentPadding;
       }
     }
 

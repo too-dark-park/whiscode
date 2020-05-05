@@ -14,7 +14,7 @@
   align-items: flex-end;
 }
 
-$diameter: 60;
+$diameter: 30;
 $unit: px;
 $diameterUnit: $diameter + $unit;
 
@@ -25,8 +25,8 @@ $diameterUnit: $diameter + $unit;
   border-radius: 50%;
   position: fixed;
   overflow: hidden;
-  bottom: 5vh;
-  right: 5vw;
+  bottom: 3vh;
+  right: 2vw;
   z-index: 1;
 
   div {
@@ -66,8 +66,26 @@ $diameterUnit: $diameter + $unit;
   }
 }
 
-@media screen and (min-width: breakpoints.breakpoint("sm")) {
+@media screen and (min-width: breakpoints.breakpoint("lg")) {
+  $diameter: 60;
+  $unit: px;
+  $diameterUnit: $diameter + $unit;
+
   .dot {
-      bottom: 8vh;
+    bottom: 8vh;
+    height: $diameterUnit;
+    width: $diameterUnit;
+
+    div {
+      width: $diameterUnit;
+      height: ($diameter / 2) + $unit;
+
+      mat-icon {
+        width: $diameterUnit;
+        height: $diameterUnit;
+        font-size: ($diameter / 1.5) + $unit;
+        bottom: -($diameter / 3) + $unit;
+      }
+    }
   }
 }
