@@ -33,7 +33,6 @@ export class HomeComponent {
   // Would be good to calculate the nearest section based on the user's screen position
   // When a user scrolls, the 'currentSectionIndex' is no longer valid
   scrollDown() {
-
     if (this.down.nativeElement.classList.contains('disabled')) {
       return;
     }
