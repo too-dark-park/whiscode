@@ -21,11 +21,20 @@ a {
 p {
   line-height: 1.8em;
   font-size: 0.6em;
+  margin: 0 0 1.2em;
+}
+
+.container {
+  padding: 20px;
 }
 
 @media screen and (min-width: breakpoints.breakpoint("md")) {
   html, body {
     letter-spacing: 2px;
     font-size: 16px;
+  }
+
+  p {
+    font-size: 1em;
   }
 }
