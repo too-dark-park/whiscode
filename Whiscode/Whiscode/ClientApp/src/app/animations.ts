@@ -55,3 +55,12 @@ export const ttbCubicAnimation =
       }))
     ])
   ]);
+
+export const fadeAnimation =
+  trigger('fade', [
+    state('in', style({ opacity: 1 })),
+    transition(':leave', [
+      style({ opacity: 1 }),
+      animate('0.3s ease-out', style({ opacity: 0 }))
+    ])
+  ]);
