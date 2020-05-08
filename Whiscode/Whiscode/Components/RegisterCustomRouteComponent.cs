@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder.Internal;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.AspNetCore.Routing.Matching;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Umbraco.Core.Composing;
