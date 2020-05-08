@@ -1,4 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using Microsoft.AspNetCore.Builder.Internal;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Routing.Matching;
+using System.Web.Http;
+using System.Web.Mvc;
 using System.Web.Routing;
 using Umbraco.Core.Composing;
 
@@ -11,11 +16,14 @@ namespace Whiscode.Components
     {
         public void Initialize()
         {
+            RouteTable.Routes.MapHttpRoute(
+                    "DefaultApi",
+                    "api/{controller}/{action}");
+
             RouteTable.Routes.MapRoute(
                     "Default", // Route name
                     "{*catchall}", // URL with parameters
                     new { controller = "Home", action = "Index" });
-
         }
 
         public void Terminate()
