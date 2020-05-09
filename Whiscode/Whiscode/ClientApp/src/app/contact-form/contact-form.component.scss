@@ -1,4 +1,13 @@
+@use '../../scss/breakpoints';
+
 mat-form-field {
     margin-bottom: 20px;
     width: 100%;
 }
+
+@media screen and (min-width: breakpoints.breakpoint("md")) {
+  form {
+      width: 55%;
+  }
+}
+

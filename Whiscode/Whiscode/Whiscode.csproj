@@ -317,6 +317,8 @@
     <Content Include="ClientApp\src\app\app.component.html" />
     <None Include="ClientApp\src\app\logo\logo.component.scss" />
     <None Include="ClientApp\src\app\contact-form\contact-form.component.scss" />
+    <Content Include="ClientApp\src\app\config\config.component.css" />
+    <Content Include="ClientApp\src\app\config\config.component.html" />
     <Content Include="ClientApp\src\app\contact-form\contact-form.component.html" />
     <None Include="ClientApp\src\app\home\home.component.scss" />
     <Content Include="ClientApp\src\app\home\home.component.html" />
@@ -363,6 +365,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\ContactController.cs" />
+    <Compile Include="Api\Models\ContactFormRequest.cs" />
     <Compile Include="App_Data\Models\Blog.generated.cs" />
     <Compile Include="App_Data\Models\Blogpost.generated.cs" />
     <Compile Include="App_Data\Models\Contact.generated.cs" />
@@ -380,8 +384,12 @@
     <Compile Include="App_Data\Models\Product.generated.cs" />
     <Compile Include="App_Data\Models\Products.generated.cs" />
     <Compile Include="Components\RegisterCustomRouteComponent.cs" />
+    <Compile Include="Composers\RegisterDependenciesComposer.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmailService.cs" />
+    <Compile Include="Services\IEmailService.cs" />
+    <Compile Include="Validators\EmailValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config\imageprocessor\security.config" />
@@ -430,13 +438,20 @@
     <TypeScriptCompile Include="ClientApp\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\config\config.component.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\config\config.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\config\config.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\http-error-handler.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\logo\logo.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\material-module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\message.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\sections\sections.component.spec.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\sections\sections.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\top-menu\top-menu.component.spec.ts" />

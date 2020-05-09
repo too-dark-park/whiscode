@@ -1,8 +1,8 @@
 <div class="container">
   <p>If you'd like to get in touch you can drop me an email at <a href="mailto:sarah@whiscode.co.uk">sarah@whiscode.co.uk</a> or fill out the form below.</p>
 
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
-
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)"
+        *ngIf="!messageService.messages.length">
     <mat-form-field>
       <mat-label>Name</mat-label>
       <input matInput [formControl]="nameFormControl" formControlName="name">
@@ -15,8 +15,8 @@
       <mat-label>Email</mat-label>
       <input matInput [formControl]="emailFormControl"
              placeholder="Eg. hello@example.com"
-             formControlName="email">
-      <mat-hint>I'll email you back as soon as I can :)</mat-hint>
+             formControlName="emailAddress">
+      <mat-hint>No spam - I'll use this email to respond to your query :)</mat-hint>
       <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
         Please enter a valid email address
       </mat-error>
@@ -40,7 +40,15 @@
             color="primary"
             aria-label="Send Message"
             [disabled]="!contactForm.valid"
-            type="submit">Send Message</button>
-
+            type="submit">
+      Send Message
+    </button>
   </form>
+
+  <div *ngIf="messageService.messages.length" >
+    <div *ngFor='let message of messageService.messages'>
+      <h2>{{message.subject}}</h2>
+      <p> {{message.message}} </p>
+    </div>
+  </div>
 </div>

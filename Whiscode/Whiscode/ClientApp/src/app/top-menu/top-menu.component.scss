@@ -60,7 +60,7 @@ header {
 
   nav {
     justify-content: flex-start;
-    font-size: 1.2em;
+    font-size: 0.8em;
     flex: 1;
     display: flex;
     position: relative;
@@ -102,6 +102,10 @@ header {
   header {
     .menu, .close {
       display: none;
+    }
+
+    nav {
+      font-size: 1.2em;
     }
 
     & nav, & nav.hide {
