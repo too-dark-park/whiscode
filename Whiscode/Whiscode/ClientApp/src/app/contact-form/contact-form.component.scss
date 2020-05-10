@@ -5,9 +5,29 @@ mat-form-field {
     width: 100%;
 }
 
+.social {
+  margin: 30px 0 40px;
+
+  a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 50px;
+  }
+
+  .linkedin {
+    background-image: url('~/Media/linkedin.svg');
+  }
+  .github {
+    background-image: url('~/Media/github.svg');
+  }
+  .stackoverflow {
+    background-image: url('~/Media/stackoverflow.svg');
+  }
+}
+
 @media screen and (min-width: breakpoints.breakpoint("md")) {
   form {
       width: 55%;
   }
 }
-

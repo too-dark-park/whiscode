@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 100%;
-  background-size: 50% auto;
+  background-size: 50% 50%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -71,11 +71,6 @@
       .content {
         padding-right: $contentPadding;
       }
-    }
-
-    p {
-      font-size: 1.4em;
-      line-height: 2.4em;
     }
   }
 }

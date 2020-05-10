@@ -361,6 +361,11 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Media\code.svg" />
+    <Content Include="Media\dot-net.svg" />
+    <Content Include="Media\github.svg" />
+    <Content Include="Media\linkedin.svg" />
+    <Content Include="Media\stackoverflow.svg" />
     <Content Include="Media\umbraco_logo_white.svg" />
     <Content Include="Web.config" />
   </ItemGroup>

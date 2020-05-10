@@ -1,5 +1,11 @@
 <div class="container">
   <p>If you'd like to get in touch you can drop me an email at <a href="mailto:sarah@whiscode.co.uk">sarah@whiscode.co.uk</a> or fill out the form below.</p>
+  <p>You can also find me on the following social media platforms:</p>
+  <div class="social">
+    <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/sarah-giblett/" target="_blank"></a>
+    <a class="github" aria-label="GitHub" href="https://github.com/too-dark-park" target="_blank"></a>
+    <a class="stackoverflow" aria-label="Stack Overflow" href="https://stackoverflow.com/users/7513192/whiscode" target="_blank"></a>
+  </div>
 
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)"
         *ngIf="!messageService.messages.length">
