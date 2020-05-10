@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/ClientApp/dist/ClientApp/styles.15bae3a474b0c4dd1f69.css">
 
     @RenderSection("Header", required: false)
 </head>
@@ -18,11 +19,12 @@
 
     @RenderBody()
 
-    <script src="@Url.Content("~/ClientApp/dist/ClientApp/runtime.js")" type="module"></script>
-    <script src="@Url.Content("~/ClientApp/dist/ClientApp/polyfills.js")" type="module"></script>
-    <script src="@Url.Content("~/ClientApp/dist/ClientApp/styles.js")" type="module"></script>
-    <script src="@Url.Content("~/ClientApp/dist/ClientApp/vendor.js")" type="module"></script>
-    <script src="@Url.Content("~/ClientApp/dist/ClientApp/main.js")" type="module"></script>
+    <script src="~/ClientApp/dist/ClientApp/runtime-es2015.1eba213af0b233498d9d.js") type="module"></script>
+    <script src="~/ClientApp/dist/ClientApp/runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script>
+    <script src="~/ClientApp/dist/ClientApp/polyfills-es5.9e286f6d9247438cbb02.js" nomodule defer></script>
+    <script src="~/ClientApp/dist/ClientApp/polyfills-es2015.690002c25ea8557bb4b0.js" type="module"></script>
+    <script src="~/ClientApp/dist/ClientApp/main-es2015.1fb7b421591fb8ac0525.js" type="module"></script>
+    <script src="~/ClientApp/dist/ClientApp/main-es5.1fb7b421591fb8ac0525.js" nomodule defer></script>
 
 </body>
 
