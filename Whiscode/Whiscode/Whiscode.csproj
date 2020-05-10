@@ -307,6 +307,17 @@
     <Content Include="ClientApp\.gitignore" />
     <Content Include="ClientApp\angular.json" />
     <Content Include="ClientApp\browserslist" />
+    <Content Include="ClientApp\dist\ClientApp\3rdpartylicenses.txt" />
+    <Content Include="ClientApp\dist\ClientApp\assets\whiscode_dark.svg" />
+    <Content Include="ClientApp\dist\ClientApp\favicon.ico" />
+    <Content Include="ClientApp\dist\ClientApp\index.html" />
+    <Content Include="ClientApp\dist\ClientApp\main-es2015.1fb7b421591fb8ac0525.js" />
+    <Content Include="ClientApp\dist\ClientApp\main-es5.1fb7b421591fb8ac0525.js" />
+    <Content Include="ClientApp\dist\ClientApp\polyfills-es2015.690002c25ea8557bb4b0.js" />
+    <Content Include="ClientApp\dist\ClientApp\polyfills-es5.9e286f6d9247438cbb02.js" />
+    <Content Include="ClientApp\dist\ClientApp\runtime-es2015.1eba213af0b233498d9d.js" />
+    <Content Include="ClientApp\dist\ClientApp\runtime-es5.1eba213af0b233498d9d.js" />
+    <Content Include="ClientApp\dist\ClientApp\styles.15bae3a474b0c4dd1f69.css" />
     <Content Include="ClientApp\e2e\protractor.conf.js" />
     <Content Include="ClientApp\e2e\tsconfig.json" />
     <Content Include="ClientApp\karma.conf.js" />
