@@ -32,7 +32,8 @@ namespace Whiscode.Api
             message.AppendLine($"Name: {form.Name}<br /><br />");
             message.AppendLine(form.Message);
 
-            if (await _emailService.SendAsync("sarah+contactform@whiscode.co.uk", "Website Enquiry", message.ToString()))
+            // TODO replace with whiscode domain email once transfer has completed
+            if (await _emailService.SendAsync("whiscodeltd@gmail.com", "Website Enquiry", message.ToString()))
             {
                 return Ok();
             }
