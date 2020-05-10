@@ -11,8 +11,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  background-position-x: 100%;
-  background-size: 50% 50%;
+  background-position-x: 85%;
+  background-size: 30% 50%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
 
   &.right {
     align-items: flex-end;
-    background-position-x: 0;
+    background-position-x: 15%;
 
     .content {
       padding: 20px 45px 20px 0;
@@ -52,6 +52,10 @@
       }
     }
 
+    .overlay {
+      width: 50%;
+    }
+
     p {
       font-size: 1em;
       line-height: 2.2em;
@@ -63,11 +67,16 @@
 
   $contentPadding: 95px;
   .section {
+    background-size: 50% 50%;
+    background-position-x: 100%;
+
     .content {
       padding-left: $contentPadding;
     }
 
     &.right {
+      background-position-x: 0%;
+
       .content {
         padding-right: $contentPadding;
       }
