@@ -1,4 +1,10 @@
-﻿<!doctype html>
+﻿@{
+    string path = "/ClientApp/dist/ClientApp/";
+    string folder = System.Web.HttpContext.Current.Server.MapPath(path);
+    DirectoryInfo directoryInfo = new System.IO.DirectoryInfo(folder);
+}
+
+<!doctype html>
 <html>
 <head>
     <base href="~/">
@@ -19,13 +25,18 @@
 
     @RenderBody()
 
-    <script src="~/ClientApp/dist/ClientApp/runtime-es2015.1eba213af0b233498d9d.js") type="module"></script>
-    <script src="~/ClientApp/dist/ClientApp/runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script>
-    <script src="~/ClientApp/dist/ClientApp/polyfills-es5.9e286f6d9247438cbb02.js" nomodule defer></script>
-    <script src="~/ClientApp/dist/ClientApp/polyfills-es2015.690002c25ea8557bb4b0.js" type="module"></script>
-    <script src="~/ClientApp/dist/ClientApp/main-es2015.1fb7b421591fb8ac0525.js" type="module"></script>
-    <script src="~/ClientApp/dist/ClientApp/main-es5.1fb7b421591fb8ac0525.js" nomodule defer></script>
-
+    @foreach (FileInfo fileInfo in directoryInfo.GetFiles("*.js"))
+    {
+        // tsconfig.json - "target": "es2015"
+        if (fileInfo.Name.Contains("es2015"))
+        {
+            <script src="@(path + fileInfo)" type="module"></script>
+        }
+        else
+        {
+            <script src="@(path + fileInfo)" nomodule defer></script>
+        }
+    }
 </body>
 
 </html>
