@@ -4,11 +4,11 @@
   <div class="hero" *ngIf="showHeroImage" [@fade]="'in'">
     <app-logo></app-logo>
   </div>
-
-  <div class="dot" *ngIf="showDot">
-    <div><mat-icon #up class="up disabled" aria-hidden="false" aria-label="Navigate up" (click)="scrollUp()">keyboard_arrow_up</mat-icon></div>
-    <div><mat-icon #down class="down" aria-hidden="false" aria-label="Navigate down" (click)="scrollDown()">keyboard_arrow_down</mat-icon></div>
-  </div>
 </section>
+
+<div class="dot" *ngIf="showDot">
+  <div><mat-icon #up class="up disabled" aria-hidden="false" aria-label="Navigate up" (click)="scrollUp()">keyboard_arrow_up</mat-icon></div>
+  <div><mat-icon #down class="down" aria-hidden="false" aria-label="Navigate down" (click)="scrollDown()">keyboard_arrow_down</mat-icon></div>
+</div>
 
 <app-sections></app-sections>
