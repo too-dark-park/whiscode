@@ -1,6 +1,6 @@
 @use '../../scss/colours';
 @use '../../scss/breakpoints';
-@use '../../scss/top-menu';
+@use '../../scss/global';
 
 :host { }
 
@@ -45,8 +45,8 @@ header {
     height: $icon-size;
     position: absolute;
     font-size: $icon-size;
-    right: 0;
-    top: -3px;
+    right: $menu-x-position;
+    top: ($menu-y-position - 3);
     transform: rotateY(90deg);
 
     &.hide {
@@ -66,7 +66,7 @@ header {
     flex: 1;
     display: flex;
     position: relative;
-    padding: $menu-y-position $menu-x-position 0;
+    padding: $menu-y-position global.$page-side-padding 0;
 
     .links {
       transform: translateX(-100vw);

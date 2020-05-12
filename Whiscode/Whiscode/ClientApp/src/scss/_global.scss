@@ -2,11 +2,20 @@
 @use 'colours';
 @use 'breakpoints';
 
+$page-side-padding: 5vh;
+$menu-padding: 10vh;
+
 html, body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: color.scale(colours.$base-colour, $lightness: 50%);
-  letter-spacing: 2px;
+  font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif; // TODO serve Roboto
+  color: colours.$body-colour;
   font-size: 16px;
+  line-height: 150%;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 150%;
+  margin: 10px 0;
 }
 
 a {
@@ -19,22 +28,18 @@ a {
 }
 
 p {
-  line-height: 1.8em;
-  font-size: 0.6em;
-  margin: 0 0 1.2em;
+  margin: 10px 0 20px;
+  font-size: 1rem;
 }
 
-.container {
-  padding: 5vh 5vw;
+.main-container {
+  padding: 10vh $page-side-padding 0;
 }
 
-@media screen and (min-width: breakpoints.breakpoint("md")) {
-  html, body {
-    letter-spacing: 2px;
-    font-size: 16px;
-  }
+.white-text {
+    color: #ffffff;
 
-  p {
-    font-size: 0.9em;
-  }
+    a {
+        color: #ffffff;
+    }
 }

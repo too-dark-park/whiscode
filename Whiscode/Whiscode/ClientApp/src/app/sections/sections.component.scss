@@ -1,4 +1,5 @@
 @use '../../scss/breakpoints';
+@use "sass:math";
 
 :host {
     display: block;
@@ -11,75 +12,41 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  background-position-x: 85%;
-  background-size: 30% 50%;
+  background-position-x: 50%;
+  background-size: 45%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
   .overlay {
-    width: 50%;
+    width: 100%;
     height: 100%;
     flex: 1;
     align-items: center;
     display: flex;
   }
 
-  &.right {
-    align-items: flex-end;
-    background-position-x: 15%;
-
-    .content {
-      padding: 20px 45px 20px 0;
-    }
-  }
-
   .content {
-    padding: 20px 0 20px 20px;
+    padding: 15vw;
   }
 }
 
 @media screen and (min-width: breakpoints.breakpoint("md")) {
-  $contentPadding: 142px;
+  $content-padding: 15%;
+  $content-width: 38%;
+  $content-total-width: calc(#{$content-padding + $content-width});
+
+  $background-position-x: calc(100% - #{$content-padding});
+  $background-size: calc((100% - #{$content-total-width}) - (#{$content-padding} * 2));
+
   .section {
+    background-size: $background-size;
+    background-position-x: $background-position-x;
+
     .content {
-      padding-left: 40px;
-    }
-
-    &.right {
-      .content {
-        padding-right: 50px;
-      }
-    }
-
-    .overlay {
-      width: 50%;
-    }
-
-    p {
-      font-size: 1em;
-      line-height: 2.2em;
+      padding: $content-padding;
+      width: $content-width;
     }
   }
 }
 
-@media screen and (min-width: breakpoints.breakpoint("lg")) {
-
-  $contentPadding: 95px;
-  .section {
-    background-size: 50% 50%;
-    background-position-x: 100%;
-
-    .content {
-      padding-left: $contentPadding;
-    }
-
-    &.right {
-      background-position-x: 0%;
-
-      .content {
-        padding-right: $contentPadding;
-      }
-    }
-  }
-}

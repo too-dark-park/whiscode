@@ -335,7 +335,6 @@
     <Content Include="ClientApp\src\scss\_breakpoints.scss" />
     <Content Include="ClientApp\src\scss\_global.scss" />
     <Content Include="ClientApp\src\scss\_colours.scss" />
-    <Content Include="ClientApp\src\scss\_top-menu.scss" />
     <None Include="ClientApp\src\styles.scss" />
     <Content Include="ClientApp\tsconfig.app.json" />
     <Content Include="ClientApp\tsconfig.json" />

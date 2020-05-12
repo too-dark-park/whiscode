@@ -1,28 +1,30 @@
 @use "sass:color";
 @use '../../scss/colours';
 @use '../../scss/breakpoints';
-@use '../../scss/top-menu';
+@use '../../scss/global';
 
 :host {
   display: block;
   position: relative;
 }
 
+@debug global.$menu-padding;
+
 section {
-  height: 100 - top-menu.$top-menu-height;
+  height: 100vh - global.$menu-padding;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: top-menu.$top-menu-height;
+  top: global.$menu-padding;
 }
 
 .hero {
-    width: 50%;
+    width: 80%;
 }
 
-$diameter: 30;
+$diameter: 40;
 $unit: px;
 $diameterUnit: $diameter + $unit;
 
@@ -74,6 +76,35 @@ $diameterUnit: $diameter + $unit;
   }
 }
 
+@media screen and (min-width: breakpoints.breakpoint("md")) {
+  $diameter: 60;
+  $unit: px;
+  $diameterUnit: $diameter + $unit;
+
+  .dot {
+    bottom: 8vh;
+    height: $diameterUnit;
+    width: $diameterUnit;
+    right: 8vw;
+
+    div {
+      width: $diameterUnit;
+      height: ($diameter / 2) + $unit;
+
+      mat-icon {
+        width: $diameterUnit;
+        height: $diameterUnit;
+        font-size: ($diameter / 1.5) + $unit;
+        bottom: -($diameter / 3) + $unit;
+      }
+    }
+  }
+
+  .hero {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: breakpoints.breakpoint("lg")) {
   $diameter: 60;
   $unit: px;
@@ -95,5 +126,9 @@ $diameterUnit: $diameter + $unit;
         bottom: -($diameter / 3) + $unit;
       }
     }
+  }
+
+  .hero {
+    width: 40%;
   }
 }
