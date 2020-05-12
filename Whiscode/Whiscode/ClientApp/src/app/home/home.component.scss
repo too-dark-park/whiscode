@@ -8,8 +8,6 @@
   position: relative;
 }
 
-@debug global.$menu-padding;
-
 section {
   height: 100vh - global.$menu-padding;
   display: flex;
