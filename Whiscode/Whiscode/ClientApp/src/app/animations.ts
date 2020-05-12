@@ -43,15 +43,16 @@ export const rtlEaseOutElasticAnimation =
     ])
   ]);
 
+// TODO translate values are specific to logo tagline so not reusable for other elements
 export const ttbCubicAnimation =
   trigger('ttbCubic', [
     state('in', style({
-      transform: 'translate(-28.3955px, -102.874px)'
+      transform: 'translate(-10.559562px, -67.913167px)'
     })),
     transition('void => in', [
-      style({ transform: 'translate(-28.3955px, -122.874px)' }),
+      style({ transform: 'translate(-10.559562px, -172.913167px)' }),
       animate('0.9s ease-out', style({
-        transform: 'translate(-28.3955px, -102.874px)'
+        transform: 'translate(-10.559562px, -67.913167px)'
       }))
     ])
   ]);
