@@ -1,18 +1,25 @@
 @use "sass:color";
 @use '../../scss/colours';
 @use '../../scss/breakpoints';
+@use '../../scss/top-menu';
 
 :host {
   display: block;
+  position: relative;
+}
+
+section {
+  height: 100 - top-menu.$top-menu-height;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: top-menu.$top-menu-height;
 }
 
 .hero {
-  height: 88vh;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 50%;
 }
 
 $diameter: 30;
